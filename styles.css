@@ -1,0 +1,333 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ffffff, #000000);
+  transition: background 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* added by admin ------------------*/
+/* Style for Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+
+/* Mobile View - Hide Header and Footer */
+@media screen and (max-width: 768px) {
+
+  header,
+  footer {
+    display: none;
+  }
+}
+
+
+/* --------------------------------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.social-icons-container {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498db;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* suspended not by admin------------------------------ */
+
+/* .search-container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: calc(100% - 0px);
+  max-width: 800px;
+  margin: 0 auto; */
+/* Center the search container */
+/* position: relative;  */
+/* }   */
+
+/* -------------------------------------------------- */
+
+
+/* added by admin------------------------------------- */
+
+.search-container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: calc(100% - 0px);
+  max-width: 800px;
+  position: relative;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .search-container {
+    margin: 0 auto;
+    /* Center the search container */
+  }
+}
+
+/* Desktop View */
+@media screen and (min-width: 769px) {
+  .search-container {
+
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    /* Adjust the left margin as needed */
+  }
+}
+
+
+/*----------------------------------------------------- */
+
+.image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-image {
+  max-width: 300px;
+  /* Adjust the size as needed */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.search-box {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #dfe6e9;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-box:focus {
+  border-color: #3498db;
+}
+
+.search-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.search-engine-button {
+  flex: 0 0 auto;
+  padding: 10px 20px;
+  /* Adjust button padding */
+  font-size: 14px;
+  /* Adjust button font size */
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.search-engine-button i {
+  margin-right: 5px;
+}
+
+.search-engine-button:hover {
+  background-color: #2980b9;
+}
+
+.search-engine-button.selected {
+  background-image: linear-gradient(45deg, #f8b500, #f78b00, #ff4d00, #d80351);
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.search-button-container {
+  width: 100%;
+  text-align: center;
+}
+
+.search-button {
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #f8b500;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.search-button:hover {
+  background-color: #f78b00;
+}
+
+/* added by admin -------------------------------------------------------- */
+
+/* Footer Styles */
+.footer {
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  /* Align text in footer center */
+  border-top: 1px solid #ccc;
+  /* Add a top border for separation */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+p {
+  margin: 5px 0;
+}
+
+/* Mobile View - Show Footer */
+@media screen and (max-width: 768px) {
+  .footer {
+    display: none;
+    /* Show footer on mobile */
+  }
+}
+
+/* ----------------------------------------------------------------------------- */
+
+#location {
+  font-weight: bold;
+}
+
+/* Hide engine buttons on desktop */
+@media screen and (min-width: 601px) {
+  .search-buttons.desktop-only {
+    display: flex;
+  }
+
+  .search-buttons.mobile-only {
+    display: none;
+  }
+}
+
+/* Show engine icons on mobile */
+@media screen and (max-width: 600px) {
+  .search-buttons.desktop-only {
+    display: none;
+  }
+
+  .search-buttons.mobile-only {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+  ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .search-buttons.mobile-only .search-engine-button {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .search-buttons.mobile-only .search-engine-button i {
+    margin-right: 5px;
+  }
+
+  .search-buttons.mobile-only .search-engine-button:hover {
+    background-color: #2980b9;
+  }
+}
